@@ -2,7 +2,7 @@
 # Both constructor and method should have docstrings to describe purpose, arguments, and return values.
 # Make sure the docstrings are compatible with Sphinx:
 
-class DummyClass:
+class RateLimiter:
     """
     A dummy class to demonstrate docstring formatting.
 
