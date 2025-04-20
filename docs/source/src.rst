@@ -1,21 +1,13 @@
-src package
+src
 ===========
+
+This package contains the main functionality of the project.
 
 Submodules
 ----------
 
-src.runner module
------------------
+.. toctree::
+   :maxdepth: 4
 
-.. automodule:: src.runner
-   :members:
-   :show-inheritance:
-   :undoc-members:
-
-Module contents
----------------
-
-.. automodule:: src
-   :members:
-   :show-inheritance:
-   :undoc-members:
+   src.core
+   src.exec
