@@ -1,19 +1,27 @@
-# Create a dummy python class with a constructor and simple method. 
-# Both constructor and method should have docstrings to describe purpose, arguments, and return values.
-# Make sure the docstrings are compatible with Sphinx:
-
 class RateLimiter:
     """
     A dummy class to demonstrate docstring formatting.
 
     This class serves as an example for creating a Python class with a constructor and a simple method.
+
+    Example:
+        .. code-block:: python
+
+            rate_limiter = RateLimiter(10)
+            rate_limiter.increment(5)
+            >>> 15
+
+    Attributes:
+        value (int): An integer value that can be incremented.
+
     """
 
     def __init__(self, value: int):
         """
         Initialize the DummyClass with a value.
 
-        :param value: An integer value to initialize the class.
+        Args:
+            value (int): The initial value to be stored in the class.
         """
         self.value = value
 
@@ -21,8 +29,11 @@ class RateLimiter:
         """
         Increment the stored value by a specified amount.
 
-        :param amount: The amount to add to the stored value.
-        :return: The new value after incrementing.
+        Args:
+            amount (int): The amount to increment the value by.
+
+        Returns:
+            int: The new value after incrementing.
         """
         self.value += amount
         return self.value
